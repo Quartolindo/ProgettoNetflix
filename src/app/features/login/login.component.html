@@ -1,0 +1,42 @@
+<!-- <input type="text" required placeholder="Inserisci il nome utente" [ngModel] name="user">
+            <input type="password" required placeholder="Inserisci la Password" [ngModel] name="pass">
+            <button type="submit" [disabled]="f.invalid">ACCEDI</button> -->
+<div class="bg-img">
+
+  <form  #f="ngForm" (submit)="auth.login(f.value)">
+
+    <div class="row">
+      <div class="col">
+
+      </div>
+    </div>
+
+    <mat-card class="container">
+      <mat-card-header class="pb-3">
+        <mat-card-title>Inserisci i tuoi dati</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+          <div class="col">
+            <mat-form-field appearance="outline">
+              <mat-label>Email</mat-label>
+              <input matInput placeholder="Email" [ngModel] name="user" required>
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" type="password" [ngModel] name="pass" required>
+              <mat-icon matSuffix>lock</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+        <button mat-raised-button color="warn" type="submit" [disabled]="f.invalid">Accedi</button>
+        <button mat-raised-button color="warn" routerLink="/stepper-editable-example">Iscriviti a Netflix</button>
+      </mat-card-content>
+    </mat-card>
+  </form>
+</div>

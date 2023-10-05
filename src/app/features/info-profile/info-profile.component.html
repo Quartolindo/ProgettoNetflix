@@ -1,0 +1,64 @@
+<div class="bg-img">
+  <div class="container-fluid">
+    <div class="row position-center-card">
+      <div class="col-6 offset-3">
+
+
+        <mat-card class="example-full-width">
+          <div class="row">
+            <div class="col">
+              <mat-card-title>
+                <h1>IL MIO PROFILO</h1>
+              </mat-card-title>
+              <mat-card-subtitle>Dati account</mat-card-subtitle>
+              <mat-card-content>
+                <div *ngFor="let user of mergeValueForm">
+                  <div>
+                    <span class="el-info-label color-primary">Nome:</span>
+                    <span class="el-info-value p-lg-2">
+                      {{user.nameCtrl}}
+                    </span>
+                  </div>
+                  <div>
+                    <span class="el-info-label color-primary">Cognome:</span>
+                    <span class="el-info-value p-lg-2">
+                      {{user.surnameCtrl}}
+                    </span>
+                  </div>
+
+                  <div>
+                    <span class="el-info-label color-primary">Data di nascita:</span>
+                    <span class="el-info-value p-lg-2">
+                      {{user.ageCtrl | date: 'dd/MM/yyyy'}}
+                    </span>
+                  </div>
+                  <div>
+                    <span class="el-info-label color-primary">Indirizzo di residenza:</span>
+                    <span class="el-info-value p-lg-2">
+                      {{user.addressCtrl}}
+                    </span>
+                  </div>
+                  <div>
+                    <span class="el-info-label color-primary">Telefono:</span>
+                    <span class="el-info-value p-lg-2">
+                      {{user.telephoneCtrl}}
+                    </span>
+                  </div>
+                </div>
+              </mat-card-content>
+            </div>
+          </div>
+          <mat-card-content>
+
+          </mat-card-content>
+          <mat-card-actions>
+            <button routerLink="/home" class="w-100" mat-raised-button color="warn" mat-button>Torna alla home</button>
+          </mat-card-actions>
+        </mat-card>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>

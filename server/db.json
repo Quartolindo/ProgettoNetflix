@@ -1,0 +1,483 @@
+{
+  "preferiti": [],
+  "profilo": [
+    {
+      "id": 1
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 6
+    }
+  ],
+  "login": [
+    {
+      "name": "Valerio Formisano",
+      "token": "123456"
+    }
+  ],
+  "film": [
+    {
+      "titolo": "Spiderman 1",
+      "anno": 2002,
+      "bio": "Il morso di un ragno dona poteri incredibili ad un giovane studente",
+      "protagonisti": "Matteo Martini,Simone Quarto,Valerio Formisano",
+      "paese": "Stati uniti",
+      "categoria": "azione",
+      "img": "../assets/img/spiderman1.jpg",
+      "codeYoutube": "oDTqLon8Dyo",
+      "favorite": null
+    },
+    {
+      "titolo": "Spiderman 2",
+      "anno": 2004,
+      "bio": "Spiderman combatte contro un pericoloso scienziato intento ad ucciderlo con i suoi tentacoli",
+      "protagonisti": "Manuel Rosati,Pasquale Felaco,Valerio Formisano",
+      "paese": "Stati uniti",
+      "categoria": "azione",
+      "img": "../assets/img/spiderman2.jpg",
+      "favorite": null
+    },
+    {
+      "titolo": "Spiderman 3",
+      "anno": 2007,
+      "bio": "Spiderman combatte contro uno dei suoi peggiori nemici",
+      "protagonisti": "Matteo Martini,Pasquale Felaco,Davide Rizk",
+      "paese": "Stati uniti",
+      "categoria": "azione",
+      "img": "../assets/img/spiderman3.jpg",
+      "favorite": null
+    }
+  ],
+  "serie-tv": [
+    {
+      "titolo": "Teen Wolf",
+      "stagioni": [
+        {
+          "numeroStagione": 1,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "48m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "47m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "47m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "58m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "51m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 2,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "54m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "42m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "59m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "44m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "55m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 3,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "55m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "53m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "57m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "58m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "58m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "1h15m",
+              "img": "../assets/img/teenwolf.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        }
+      ],
+      "episodi": 18,
+      "bio": "Un gruppo di giovani ragazzi lupo,a cui è cambiata radicalmente la vita,proteggono la città",
+      "anno": 2011,
+      "img": "../assets/img/teenwolf.jpg",
+      "favorite": null
+    },
+    {
+      "titolo": "Riverdale",
+      "stagioni": [
+        {
+          "numeroStagione": 1,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "48m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "47m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "47m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "58m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "51m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 2,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "54m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "42m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "59m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "44m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "55m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 3,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "54m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "42m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "59m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "44m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "55m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 4,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "55m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "53m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "57m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "58m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "58m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "1h15m",
+              "img": "../assets/img/Riverdale.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        }
+      ],
+      "episodi": 24,
+      "bio": "4 ragazzi coinvolti nelle varie vicende della loro città",
+      "anno": 2018,
+      "img": "../assets/img/Riverdale.jpg",
+      "favorite": null
+    },
+    {
+      "titolo": "Mandalorian",
+      "stagioni": [
+        {
+          "numeroStagione": 1,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "48m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "47m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "47m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "58m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "51m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        },
+        {
+          "numeroStagione": 2,
+          "listaEpisodi": [
+            {
+              "titolo": "Episodio 1",
+              "durata": "54m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 2",
+              "durata": "42m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 3",
+              "durata": "59m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 4",
+              "durata": "53m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 5",
+              "durata": "44m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            },
+            {
+              "titolo": "Episodio 6",
+              "durata": "55m",
+              "img": "../assets/img/mandalorian.jpg",
+              "bio": "la serie continua, non smettere di guardare"
+            }
+          ]
+        }
+      ],
+      "episodi": 12,
+      "bio": "l'avventaure di un cacciatore di taglie mandaloriano nell'universo di Star Wars",
+      "anno": 2021,
+      "img": "../assets/img/mandalorian.jpg",
+      "favorite": null
+    }
+  ],
+  "documentari": [
+    {
+      "titolo": "The Last Dance",
+      "anno": 2020,
+      "bio": "Questa docuserie racconta l'ascesa della superstar Michael Jordan e la storia dei Chicago Bulls degli anni '90 con filmati inediti dell'indimenticabile stagione 1997-98.",
+      "ambientazione": "Stati Uniti",
+      "img": "../assets/img/foto2.jpg",
+      "favorite": null
+    },
+    {
+      "titolo": "I segreti dell'antico Egitto",
+      "anno": 2010,
+      "bio": "alcune delle più interessanti domande riguardanti i misteri sull'antico egitto,Tre secoli dopo le prime scoperte, l'Egitto rivela ancora nuovi tesori sepolti e i suoi inesauribili miti continuano ad esistere. Un viaggio onirico attraverso quattro simboli potenti e misteriosi attorno ai quali si è costruita l'identità della civiltà egizia: Morte, Eternità, Deserto e Nilo.",
+      "ambientazione": "Egitto",
+      "img": "../assets/img/egitto.webp",
+      "favorite": null
+    },
+    {
+      "titolo": "Notte sul pianeta Terra",
+      "anno": 2018,
+      "bio": "uno spazio dove le meraviglie del mondo vengono rivelate",
+      "ambientazione": "",
+      "img": "../assets/img/natura.jpg",
+      "favorite": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+<div class="container-fluid">
+
+  <div class="row p-2">
+    <div class="col -3">
+      <app-search (searchTextEmit)="eventSearch($event)"></app-search>
+
+    </div>
+  </div>
+
+    <app-card-preview [list]="listaFilm" [searchText]="searchText"></app-card-preview>
+</div>

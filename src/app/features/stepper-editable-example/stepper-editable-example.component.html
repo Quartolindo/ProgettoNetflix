@@ -1,0 +1,211 @@
+<!-- <button mat-raised-button (click)="isEditable = !isEditable">
+  {{!isEditable ? 'Enable edit mode' : 'Disable edit mode'}}
+</button> -->
+
+
+<div class="bg-img">
+  <div class="container-fluid">
+    <div class="row position-center-card">
+      <div class="col-6 offset-3">
+
+<mat-stepper  linear #stepper  (selectionChange)="setIndex($event)" >
+  <mat-step [stepControl]="firstFormGroup" [editable]="isEditable">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Dati Personali</ng-template>
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Nome</mat-label>
+            <input matInput formControlName="nameCtrl" placeholder="Es. Mario" required>
+            <mat-error *ngIf="firstFormGroup.get('nameCtrl').hasError('required')">
+              Campo obbligatorio
+               </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Cognome</mat-label>
+            <input matInput formControlName="surnameCtrl" placeholder="Es. Rossi" required>
+            <mat-error *ngIf="firstFormGroup.get('surnameCtrl').hasError('required')">
+              Campo obbligatorio
+               </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field appearance="outline" class="example-full-width">
+            <mat-label>Data di nascita</mat-label>
+            <input [max]="minimumAge" matInput formControlName="ageCtrl" [matDatepicker]="datepicker" required >
+            <mat-error *ngIf="firstFormGroup.get('ageCtrl').hasError('required')">Campo obbligatorio</mat-error>
+            <mat-datepicker-toggle matIconSuffix [for]="datepicker"></mat-datepicker-toggle>
+            <mat-datepicker #datepicker>
+            </mat-datepicker>
+          </mat-form-field>
+        </div>
+          <div class="col">
+            <mat-form-field class="example-full-width" appearance="outline">
+              <mat-label>Indirizzo</mat-label>
+              <input matInput formControlName="addressCtrl" placeholder="Es. Via Marco Rossi 30" required>
+              <mat-error *ngIf="firstFormGroup.get('addressCtrl').hasError('required')">
+                Campo obbligatorio
+                 </mat-error>
+              <mat-icon matSuffix>home</mat-icon>
+            </mat-form-field>
+          </div>
+        </div>
+
+        <div class="row w-100 pt-2  p-x-2">
+          <div class="col-12  d-flex justify-content-center">
+        <button mat-raised-button color="warn" mat-button matStepperNext>Avanti</button>
+        </div>
+      </div>
+    </form>
+  </mat-step>
+
+  <mat-step [stepControl]="secondFormGroup" [editable]="isEditable">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Dati Account</ng-template>
+
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Nome utente</mat-label>
+            <input matInput formControlName="nicknameCtrl" required>
+            <mat-error *ngIf="nicknameCtrl.errors">Campo obbligatorio(min.8 lettere)</mat-error>
+            <mat-icon matSuffix>person</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Telefono</mat-label>
+            <input type="tel" matInput formControlName="telephoneCtrl" placeholder="Es. 555-555-1234" required [pattern]="numberPattern">
+            <mat-error *ngIf="telephoneCtrl.errors">Campo obbligatorio(numero non valido)</mat-error>
+            <mat-icon matSuffix>phone</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Email</mat-label>
+            <input  matInput formControlName="emailCtrl" placeholder="Es. Mariorossi@gmail.com" required [pattern]="emailPattern">
+              <mat-error *ngIf="emailCtrl.errors">Campo obbligatorio (l'email non è valida)</mat-error>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Conferma Email</mat-label>
+            <input matInput formControlName="confirmEmailCtrl" placeholder="Es. Mariorossi@gmail.com" required onblur="confirmEmail()"/>
+            <mat-hint *ngIf="secondFormGroup?.errors?.['emailNotMatch']">L'email non sono uguali</mat-hint>
+            <mat-error *ngIf="secondFormGroup.get('confirmEmailCtrl').hasError('required')">Campo obbligatorio</mat-error>
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Password</mat-label>
+            <input type="password" matInput placeholder="Password" formControlName="passwordCtrl" required>
+            <mat-error *ngIf="secondFormGroup.get('passwordCtrl').hasError('required')">
+              Campo obbligatorio
+               </mat-error>
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+        </div>
+        <div class="col">
+          <mat-form-field class="example-full-width" appearance="outline">
+            <mat-label>Conferma Password</mat-label>
+            <input type="password" matInput placeholder="Password" formControlName="confirmPasswordCtrl" required>
+               <mat-hint *ngIf="secondFormGroup?.errors?.['passwordsNotMatch']">Le password non sono uguali</mat-hint>
+               <mat-error *ngIf="secondFormGroup.get('confirmPasswordCtrl').hasError('required')">Campo obbligatorio</mat-error>
+            <mat-icon matSuffix>lock</mat-icon>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+        <button class="w-100" mat-raised-button color="warn" mat-button matStepperPrevious>Indietro</button>
+        </div>
+        <div class="col">
+          <button  class="w-100" mat-raised-button color="warn" mat-button matStepperNext >Avanti</button>
+        </div>
+      </div>
+
+    </form>
+  </mat-step>
+  <mat-step >
+<ng-template matStepLabel>Riepilogo</ng-template>
+
+<div class="row w-100 pt-2  p-x-2">
+  <div class="col-12  d-flex justify-content-center">
+    <p>Ora sei iscritto,ecco i tuoi dati personali</p>
+  </div>
+</div>
+
+
+      <div>
+        <span class="el-info-label color-primary">Nome:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.nameCtrl}}
+        </span>
+      </div>
+      <div>
+        <span class="el-info-label color-primary">Cognome:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.surnameCtrl}}
+        </span>
+      </div>
+
+      <div>
+        <span class="el-info-label color-primary">Data di nascita:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.ageCtrl | date: 'MM/dd/yyyy'}}
+        </span>
+      </div>
+      <div>
+        <span class="el-info-label color-primary">Indirizzo di residenza:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.addressCtrl}}
+        </span>
+      </div>
+
+      <div>
+        <span class="el-info-label color-primary">Nome utente:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.nicknameCtrl}}
+        </span>
+      </div>
+      <div>
+        <span class="el-info-label color-primary">Email:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.emailCtrl}}
+        </span>
+      </div>
+      <div>
+        <span class="el-info-label color-primary">Telefono:</span>
+        <span class="el-info-value p-lg-2" >
+          {{mergeValueForm?.telephoneCtrl}}
+        </span>
+      </div>
+
+    <div class="row">
+      <div class="col">
+      <button class="w-100" mat-raised-button color="warn" mat-button (click)="stepper.reset()">Ricomincia</button>
+      </div>
+      <div class="col">
+        <button class="w-100" mat-raised-button color="warn" mat-button matStepperPrevious>Indietro</button>
+      </div>
+      <div class="col">
+        <button routerLink="/home" class="w-100" mat-raised-button color="warn" mat-button (click)="addProfile()">Inizia a guardare</button>
+      </div>
+    </div>
+  </mat-step>
+</mat-stepper>
+

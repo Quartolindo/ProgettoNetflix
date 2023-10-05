@@ -1,0 +1,105 @@
+<div class="bg-img">
+  <div class="container-fluid">
+    <div class="row position-center-card">
+      <div class="col-6 offset-3">
+
+        <mat-card>
+
+            <div class="row w-100 pt-2  p-x-2">
+              <div class="col-12  d-flex justify-content-center">
+                <mat-card-title>ISCRIVITI A NETFLIX</mat-card-title>
+              </div>
+            </div>
+            <div class="row w-100 pb-4">
+              <div class="col-12  d-flex justify-content-center">
+                <mat-card-subtitle>Inserisci i dati richiesti per iscriverti</mat-card-subtitle>
+              </div>
+
+            </div>
+          <mat-card-content>
+            <div class="row">
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Nome</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Cognome</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Nome Utente</mat-label>
+                  <input matInput>
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Data di nascita</mat-label>
+                  <mat-date-range-input [rangePicker]="picker">
+                    <input matStartDate="">
+                    <input matEndDate="">
+                  </mat-date-range-input>
+                  <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                  <mat-date-range-picker #picker></mat-date-range-picker>
+                </mat-form-field>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Indirizzo</mat-label>
+                  <input matInput placeholder="Es. Via Marco Rossi 30">
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Telefono</mat-label>
+                  <input type="tel" matInput placeholder="555-555-1234">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+                </mat-form-field>
+              </div>
+            </div>
+
+
+            <div class="row">
+              <div class="col">
+
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="Es. marcorossi@gmail.com">
+                </mat-form-field>
+              </div>
+              <div class="col">
+                <mat-form-field class="example-full-width" appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput="">
+                </mat-form-field>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <button class="w-100" mat-raised-button color="warn" routerLink="/home">Completa l'iscrizione a Netflix</button>  
+                  <button class="w-100" mat-raised-button color="warn" routerLink="/login">Torna al Login</button>
+                </div>    
+            </div>
+          </mat-card-content>
+        </mat-card>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+

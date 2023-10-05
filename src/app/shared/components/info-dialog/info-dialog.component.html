@@ -1,0 +1,105 @@
+<h2 mat-dialog-title>Descrizione</h2>
+<mat-card class="example-card">
+  <img mat-card-image class="imgstyle" src={{serie.img}}>
+  <mat-card-title>
+    <h1>{{serie.titolo}}</h1>
+  </mat-card-title>
+  <mat-divider></mat-divider>
+  <mat-card-subtitle>{{serie?.ambientazione}} {{serie.anno}}</mat-card-subtitle>
+  <mat-card-content>
+    <p> {{serie.bio}} </p>
+    <div class="row" *ngIf="serie.stagioni">
+      <div class="col">
+        <mat-form-field appearance="outline">
+          <mat-label >Stagione</mat-label>
+          <mat-select (selectionChange)="onChange($event.value)">
+            <mat-option [value]="season" *ngFor="let season of serie.stagioni">{{season.numeroStagione}}
+              ({{season.listaEpisodi.length}} episodi) 
+              
+                <button mat-button [matMenuTriggerFor]="icon"> <mat-icon>more_vert</mat-icon></button>
+              <mat-menu #icon="matMenu">
+                <button mat-menu-item [matMenuTriggerFor]="mostraEpisodi">Episodi</button>
+              </mat-menu>
+              <mat-menu #mostraEpisodi="matMenu">
+                mostra episodi
+              </mat-menu>
+              
+            </mat-option>
+            <mat-option [value] ="serie">Vedi tutti gli episodi</mat-option>
+            
+            <!-- <button mat-button [matMenuTriggerFor]="animals">Animal index</button>
+            <mat-menu #animals="matMenu">
+              <button mat-menu-item [matMenuTriggerFor]="vertebrates">Vertebrates</button>
+            </mat-menu>
+
+            <mat-menu #vertebrates="matMenu">
+
+              <button mat-menu-item>Birds</button>
+              <button mat-menu-item>Mammals</button>
+            </mat-menu> -->
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+
+
+    <ng-container *ngFor="let episode of seasons">
+
+      <div class="row" *ngIf="!notAllSeasons">
+        <div class="col">
+          <div>
+            <img class="container-image" src={{episode.img}} alt="immagine">
+            <span>
+              {{episode.titolo}}:
+              {{episode.bio}}
+
+            </span>
+            <div>
+              {{episode.durata}}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+    <mat-accordion *ngIf="notAllSeasons">
+
+      <mat-expansion-panel *ngFor="let season of serie.stagioni">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            SERIE NUMERO {{season.numeroStagione}} (Numero Episodi: {{season.listaEpisodi.length}})
+          </mat-panel-title>
+
+        </mat-expansion-panel-header>
+        <div class="row padding-top-10" *ngFor="let espisode of season.listaEpisodi ">
+
+          <div class="col">
+            <div>
+              <img class="container-image" src={{espisode.img}} alt="immagine">
+              <span>
+                {{espisode.titolo}}:
+                {{espisode.bio}}
+
+              </span>
+              <div>
+                {{espisode.durata}}
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+  </mat-card-content>
+
+
+
+
+
+
+
+</mat-card>
